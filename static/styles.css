@@ -1,0 +1,50 @@
+a.button-y {
+    padding: 1px 6px;
+    border: 1px outset buttonborder;
+    border-radius: 3px;
+    color: buttontext;
+    background-color: buttonface;
+    text-decoration: none;
+}
+
+a.button-n {
+    padding: 1px 6px;
+    border: 1px outset buttonborder;
+    border-radius: 3px;
+    color: buttontext;
+    background-color: buttonface;
+    text-decoration: none;
+}
+
+.text {
+    line-height: 40px;
+}
+
+input {
+  font-size: 1.2em;
+  width: 20%;
+  height: 5%;
+  padding: 8px;
+  margin-top: 10px;
+}
+
+body {
+  font-size: 1em;
+  text-align: center;
+  font-family: Arial;
+  background: #e5e5e5;
+  padding-top: 2rem;
+}
+
+header {
+    background-color: #3150ee;
+    font-size: 2em;
+    text-align: center;
+    color: #dddddd;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 3rem;
+}
+

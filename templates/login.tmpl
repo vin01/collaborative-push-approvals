@@ -1,0 +1,22 @@
+<html>
+<link rel="stylesheet" href="/static/styles.css">
+<header>
+<center>
+<span class="text">Approval requests</span>
+</center>
+</header>
+<br/>
+<body>
+<form method="post" action="/login">
+<input type="text" name="username" placeholder="username" autofocus>
+<br/>
+<input type="password" name="password" placeholder="password">
+<br/>
+<input type="submit" value="Log In">
+</form>
+{{ if .error }}
+<span class="error">{{ .error }}</span>
+{{ end }}
+</body>
+</html>
+

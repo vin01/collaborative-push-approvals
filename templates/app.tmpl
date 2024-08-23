@@ -1,0 +1,29 @@
+<html>
+<link rel="stylesheet" href="/static/styles.css">
+<header>
+<center>
+<span class="text">Approval requests</span>
+</center>
+</header>
+<br/>
+<body>
+{{ range $key, $value := . }}
+   {{ $status := index $value 0 }}
+   {{ $seconds_ago := index $value 1 }}
+   {{ $info := index $value 2 }}
+   {{ $request_id := index $value 3 }}
+   <span class="text">
+     <strong>{{ $info }}</strong>: 
+     Requested {{ $seconds_ago }} seconds ago |
+     {{ $status }} |
+     {{ if eq $status "pending" }}
+     <a class="button-y" href="/?action=allow&request_id={{ $request_id }}">Allow</a>
+     <a class="button-n" href="/?action=deny&request_id={{ $request_id }}">Deny</a>
+     {{ end }}
+   </span><br/>
+{{ end }}
+
+<a href="/logout">Log out</a>
+</body>
+</html>
+
