@@ -43,8 +43,13 @@ A functional script exists in this repository under `scripts`.
 
 ## Screenshots
 
+## Web interface
+
 ![Approval requests](screenshots/approvals.png)
 ![Approval requests web](screenshots/approvals_web.png)
+
+# Slack based workflow
+
 ![Slack](screenshots/slack.png)
 
 ## TODO
